@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+<input type="text" id="in1" placeholder="text here!..." onkeyup="key()" /> <br />
+<input type="text" id="in2" placeholder="text here!..." onkeyup="key()" /><br />
+<input type="text" id="in3" placeholder="text here!..." onkeyup="key()" /><br />
+<input type="text" id="in4" placeholder="text here!..." onkeyup="key()" /><br />
+<input type="text" id="in5" placeholder="text here!..." onkeyup="key()" />
+
+
+</body>
+<script type="text/javascript">
+	function key(){
+	 var x = document.getElementById("in1");
+	 var y = document.getElementsByTagName("INPUT");
+	 
+		for(var a = 0; a<y.length; a++){
+		y[a].value = x.value;
+		}
+	}
+</script>
+</html>
